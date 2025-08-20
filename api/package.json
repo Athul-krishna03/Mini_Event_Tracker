@@ -24,7 +24,10 @@
     "qrcode": "^1.5.4",
     "reflect-metadata": "^0.2.2",
     "tsyringe": "^4.10.0",
-    "zod": "^4.0.17"
+    "zod": "^4.0.17",
+    "ts-node": "^10.9.2",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.2"
   },
   "devDependencies": {
     "@types/bcrypt": "^6.0.0",
