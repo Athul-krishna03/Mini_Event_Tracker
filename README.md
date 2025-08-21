@@ -3,7 +3,7 @@ LIVE DEMO (https://event.artistaa.shop)
 
 # 🎟️ Event Management System
 
-An **Event Management System** built with the **MERN stack (MongoDB, Express.js, React.js, Node.js)** and **Vite**, focused primarily on **event organizers**.  
+An **Event Management System** built with the **MERN stack (MongoDB, Express.js, React.js, Node.js)**, focused primarily on **event organizers**.  
 It allows organizers to create events, add participants, and automatically send event entry tickets (with QR codes) to participants via email.  
 
 ---
