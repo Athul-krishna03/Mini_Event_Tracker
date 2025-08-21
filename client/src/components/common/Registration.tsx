@@ -198,29 +198,10 @@ export default function RegistrationForm({
                   )}
                 </div>
 
-                <Button type="submit" className={buttonClass}>
+                <Button type="submit" className={`${buttonClass} transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg`}>
                   Create {roleLabel} Account
                 </Button>
               </form>
-
-              <div className="mt-6 text-center">
-                <p className="text-xs text-muted-foreground">
-                  By creating an account, you agree to our{" "}
-                  <a
-                    href="#"
-                    className="text-accent hover:text-accent/80 transition-colors"
-                  >
-                    Terms of Service
-                  </a>{" "}
-                  and{" "}
-                  <a
-                    href="#"
-                    className="text-accent hover:text-accent/80 transition-colors"
-                  >
-                    Privacy Policy
-                  </a>
-                </p>
-              </div>
 
               <div className="mt-4 text-center">
                 <p className="text-sm text-muted-foreground">

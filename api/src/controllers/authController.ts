@@ -2,7 +2,6 @@
 import { Request, Response } from 'express';
 import { inject, injectable } from 'tsyringe';
 import { IAuthService } from '../interfaces/serviceInterfaces/IAuthService';
-import { AuthRequest } from '../middleware/auth.middleware';
 import { setCookies } from '../utils/helpers/setCookie.helper';
 import { ERROR_MESSAGES, SUCCESS_MESSAGES } from '../constants/messages';
 import { STATUS_CODE } from '../constants/statusCodes';

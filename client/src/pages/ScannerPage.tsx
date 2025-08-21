@@ -30,25 +30,6 @@ export function ScannerPage() {
       setTimeout(() => navigate("/dashboard"), 2000)
     }
   }
-  const handleImageUpload = async (e: React.ChangeEvent<HTMLInputElement>) => {
-    const file = e.target.files?.[0]
-    if (!file) return
-
-    try {
-      setStatus("loading")
-      const result = await verifyTicket({ file })
-      setStatus("success")
-      setMessage(`Ticket verified for person: ${result.name}`)
-
-      setTimeout(() => navigate("/dashboard"), 2000)
-    } catch (err: any) {
-      setStatus("error")
-      setMessage(err.message || "Could not read QR from image")
-
-      setTimeout(() => navigate("/dashboard"), 2000)
-    }
-  }
-
   return (
     <DashboardLayout>
       <div className="container mx-auto px-4 py-8">
@@ -64,14 +45,6 @@ export function ScannerPage() {
             }}
           />
         </div>
-
-        {/* Image Upload */}
-        <div className="mt-6">
-          <label className="block mb-2 font-medium">Or Upload QR Image</label>
-          <input type="file" accept="image/*" onChange={handleImageUpload} />
-        </div>
-
-        {/* Visual Indicators */}
         <div className="mt-6 flex justify-center">
           {status === "loading" && (
             <div className="px-6 py-4 bg-blue-100 border border-blue-400 text-blue-700 rounded-lg">

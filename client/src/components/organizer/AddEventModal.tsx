@@ -29,7 +29,7 @@ interface IEvent {
 }
 
 interface AddEventModalProps {
-   onAddEvent: (event: Omit<IEvent, "id" | "createdBy">) => void
+    onAddEvent: (event: Omit<IEvent, "id" | "createdBy">) => void
 }
 
 export function AddEventModal({ onAddEvent }: AddEventModalProps) {

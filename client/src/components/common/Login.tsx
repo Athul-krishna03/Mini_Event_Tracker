@@ -110,17 +110,10 @@ export default function LoginForm({ role, onSubmit }: LoginFormProps) {
                     </div>
 
                     {/* Submit */}
-                    <Button type="submit" className={buttonClass}>
+                    <Button type="submit" className={`${buttonClass} transition-all duration-300 ease-in-out transform hover:scale-105 hover:shadow-lg`}>
                     Sign In as {roleLabel}
                     </Button>
                 </form>
-
-                <div className="mt-6 text-center">
-                    <a href="#" className="text-sm text-muted-foreground hover:text-accent transition-colors">
-                    Forgot your password?
-                    </a>
-                </div>
-
                 <div className="mt-4 text-center">
                     <p className="text-sm text-muted-foreground">
                     Don't have an account?{" "}

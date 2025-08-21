@@ -4,7 +4,7 @@ export const ERROR_MESSAGES = {
     USER_ID_NOT_PROVIDED: "User ID not provided",
     EMAIL_OR_PHONE_EXISTS: "Email or Phone Exists",
     EMAIL_EXISTS: "Email already exists",
-    ARTICLE_NOT_FOUND: "Article not found",
+    EVENT_NOT_FOUND: "Event not found",
     PHONE_EXISTS: "Phone already exists",
     WRONG_PASSWORD: "Wrong password",
     SET_DIFF_PASSWORD: "Set a new password other than you old.",
@@ -20,6 +20,8 @@ export const ERROR_MESSAGES = {
     INVALID_INPUT: "Invalid input",
     CATEGORY_EXISTS: "Category already exists",
     INVALID_VOTE_TYPE: "Invalid vote",
+    TICKET_NOT_FOUND: "Ticket not found",
+    EVENT_DATE_IN_PAST: "Event date must be in the future"
 } as const;
 
 export const SUCCESS_MESSAGES = {

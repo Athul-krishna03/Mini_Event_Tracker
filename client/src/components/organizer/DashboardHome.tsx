@@ -46,7 +46,7 @@ function EventCard({ event }: { event: DisplayEvent }) {
     <Card className="group hover:shadow-lg transition-all duration-200 border-border/50 hover:border-accent/20">
       <CardHeader className="pb-3">
         <div className="flex items-start justify-between">
-          <CardTitle className="font-sans text-lg font-bold text-foreground group-hover:text-accent transition-colors">
+          <CardTitle className="font-sans text-lg font-bold text-foreground group-hover:text-black transition-colors">
             {event.title}
           </CardTitle>
         </div>
@@ -101,7 +101,7 @@ function EventCard({ event }: { event: DisplayEvent }) {
             <Button
               variant="outline"
               size="sm"
-              className="w-full group-hover:bg-accent group-hover:text-accent-foreground group-hover:border-accent transition-all bg-transparent"
+              className="w-full group-hover:bg-accent group-hover:text-black-foreground group-hover:border-accent transition-all bg-transparent"
             >
               View Details
               <ArrowRight className="ml-2 h-4 w-4" />

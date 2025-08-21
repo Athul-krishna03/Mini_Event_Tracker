@@ -8,5 +8,5 @@ export const createEventSchema = z.object({
         message: "Invalid date format"
     }),
     capacity: z.number().min(1, "Capacity must be at least 1"),
-    program: z.array(z.string()).optional()
+    programs: z.array(z.string()).optional()
 });
